@@ -1,0 +1,11 @@
+PROGRAM INTREAL;
+VAR
+  COUNT : INTEGER;
+  PI    : REAL;
+BEGIN
+  WRITE('Wanna see a magic trick?');
+  PI := 3.14159;
+  WRITE('Watch this!');
+  COUNT := PI;
+  WRITE(COUNT)
+END

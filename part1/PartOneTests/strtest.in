@@ -1,0 +1,4 @@
+PROGRAM STRTEST;
+BEGIN
+WRITE('Why can't we do this?')
+END

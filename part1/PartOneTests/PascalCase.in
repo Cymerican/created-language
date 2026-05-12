@@ -1,0 +1,4 @@
+PROGRAM PascalCase;
+BEGIN
+WRITE('Youd think this be allowed.')
+END

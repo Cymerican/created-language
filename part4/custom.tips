@@ -1,0 +1,73 @@
+(* =============================================
+   custom.tips - Cymerica Sprint Analyzer
+   Author: caj514
+   Demonstrates: IF, WHILE, AND, OR, NOT,
+   relational ops, line and block comments
+   ============================================= *)
+PROGRAM SPRINT;
+VAR
+    TIME     : REAL;
+    BEST     : REAL;
+    RUNS     : INTEGER;
+    I        : INTEGER;
+    ELIGIBLE : INTEGER;
+BEGIN
+    ## Welcome to the Cymerica Sprint Analyzer
+    WRITE('Welcome to the Cymerica Sprint Analyzer.');
+    WRITE('This program analyzes your 100m dash times.');
+    WRITE('');
+    BEST := 99.0;
+    RUNS := 0;
+    I := 0;
+    (* collect 3 sprint times from the user *)
+    WHILE I < 3
+    BEGIN
+        I := I + 1;
+        WRITE('Enter your 100m time in seconds:');
+        READ(TIME);
+        RUNS := RUNS + 1;
+        (* check if this is a new personal best *)
+        IF TIME < BEST THEN
+            BEST := TIME
+        ELSE
+            WRITE('Not a new personal best.');
+        ## classify the time
+        IF TIME < 10.5 THEN
+            WRITE('Elite level time.')
+        ELSE
+            IF TIME < 11.0 THEN
+                WRITE('Competitive time.')
+            ELSE
+                WRITE('Keep putting in the work.');
+        WRITE('')
+    END;
+    WRITE('===== Sprint Session Summary =====');
+    WRITE('Total runs:');
+    WRITE(RUNS);
+    WRITE('Personal best this session:');
+    WRITE(BEST);
+    WRITE('');
+    (* nationals eligibility: sub 10.4 AND 3 runs *)
+    ELIGIBLE := 0;
+    IF (BEST < 10.4 AND RUNS = 3) THEN
+        ELIGIBLE := 1
+    ELSE
+        ELIGIBLE := 0;
+    IF ELIGIBLE = 1 THEN
+        WRITE('You are eligible for nationals qualification!')
+    ELSE
+        WRITE('Not yet at nationals qualifying standard.');
+    (* OR example: check for abnormal time *)
+    IF (BEST < 9.5 OR BEST > 15.0) THEN
+        WRITE('Warning: time appears outside normal range.')
+    ELSE
+        WRITE('Time is within a normal range.');
+    (* NOT example: confirm not disqualified *)
+    IF NOT (BEST > 15.0) THEN
+        WRITE('No disqualification. Valid effort recorded.')
+    ELSE
+        WRITE('Time too slow. Check your equipment.');
+    WRITE('');
+    WRITE('Thanks for using the Cymerica Sprint Analyzer.');
+    WRITE('Stay fast.')
+END

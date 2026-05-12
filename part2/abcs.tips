@@ -1,0 +1,36 @@
+PROGRAM ABCS;
+VAR
+  A : INTEGER; B : REAL; C : INTEGER; D : REAL; E : INTEGER;
+  F : REAL; G : INTEGER; H : REAL; I : INTEGER; J : REAL;
+  K : INTEGER; L : REAL; M : INTEGER; N : REAL; O : INTEGER;
+  P : REAL; Q : INTEGER; R : REAL; S : INTEGER; T : REAL;
+  U : INTEGER; V : REAL; W : INTEGER; M : REAL; X : REAL;
+  Y : INTEGER; Z : REAL;
+BEGIN
+  A := 1;      B := 2.0;
+  C := A;      D := B;
+  E := 12345;  F := 0.0009765625;  
+  G := E;      H := F;
+  I := G;      J := H;
+  K := 999;    L := 1.5;
+  M := K;      N := L;
+  O := 7;      P := 8.25;
+  Q := O;      R := P;
+  S := 42;     T := 0.5;
+  U := S;      V := T;
+  W := 3;      X := 4.25;
+  Y := W;      Z := X;
+  WRITE('A='); WRITE(A); WRITE(', B='); WRITE(B);
+  WRITE(', C='); WRITE(C); WRITE(', D='); WRITE(D);
+  WRITE(', E='); WRITE(E); WRITE(', F='); WRITE(F);
+  WRITE(', G='); WRITE(G); WRITE(', H='); WRITE(H);
+  WRITE(', I='); WRITE(I); WRITE(', J='); WRITE(J);
+  WRITE(', K='); WRITE(K); WRITE(', L='); WRITE(L);
+  WRITE(', M='); WRITE(M); WRITE(', N='); WRITE(N);
+  WRITE(', O='); WRITE(O); WRITE(', P='); WRITE(P);
+  WRITE(', Q='); WRITE(Q); WRITE(', R='); WRITE(R);
+  WRITE(', S='); WRITE(S); WRITE(', T='); WRITE(T);
+  WRITE(', U='); WRITE(U); WRITE(', V='); WRITE(V);
+  WRITE(', W='); WRITE(W); WRITE(', X='); WRITE(X);
+  WRITE(', Y='); WRITE(Y); WRITE(', Z='); WRITE(Z)
+END

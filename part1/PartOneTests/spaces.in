@@ -1,0 +1,13 @@
+PROGRAM SPACEOUT;
+
+BEGIN
+
+    WRITE       (          'lots of...'                  );
+
+    BEGIN
+
+        WRITE (              's p a c e'              )
+
+    END
+
+END

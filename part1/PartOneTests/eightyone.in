@@ -1,0 +1,4 @@
+PROGRAM SENTENCE;
+BEGIN
+WRITE('Itd be very frustrating if something almost worked, but was off by one character.')
+END

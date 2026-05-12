@@ -1,0 +1,15 @@
+PROGRAM RATE;
+VAR
+  RATE : INTEGER;
+  RATEE : INTEGER;
+BEGIN
+  WRITE('Who is your favorite?: 1 Jessie, 2 Derek, 3 Landon, 4 Audrey: ');
+  READ(RATE); 
+  BEGIN
+    WRITE('got ');
+    WRITE(RATE)
+  END;
+  RATEE := RATE;
+  WRITE(' copied to RATEE = ');
+  WRITE(RATEE)
+END

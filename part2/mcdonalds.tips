@@ -1,0 +1,32 @@
+PROGRAM MCDONALD;
+VAR
+  BURGERS : INTEGER;
+  FRIES : INTEGER;
+  SHAKE : INTEGER;
+  COST : REAL;
+BEGIN
+  BEGIN
+    WRITE('Welcome to the McDonalds.');
+    WRITE('How many burgers you want?: ');
+    READ(BURGERS);
+    WRITE(' The grill is broken. ')
+  END;
+
+  BEGIN
+    WRITE('How many fries you want?: ');
+    READ(FRIES);
+    WRITE(' The fryer is broken ')
+  END;
+
+  BEGIN
+    WRITE('How many milkshakes do you want?: ');
+    READ(SHAKE);
+    WRITE('The ice cream machine actually works')
+  END;
+
+  BEGIN
+    WRITE(' Your total is :');
+    COST := 67.720;
+    WRITE(COST)
+  END
+END

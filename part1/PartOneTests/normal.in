@@ -1,0 +1,6 @@
+PROGRAM N0RMAL;
+BEGIN
+WRITE('Basic test here :)');
+WRITE('All operations successful');
+WRITE('Proceed as usual')
+END
